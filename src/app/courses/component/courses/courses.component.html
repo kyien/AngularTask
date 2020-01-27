@@ -1,0 +1,47 @@
+<div style="text-align:center; margin-top:4%;">
+
+
+    <h2> All courses</h2>
+
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-10">
+                <div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+                        <table class="table">
+                            <thead class="indigo white-text">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Tutor</th>
+                                <th scope="col">Price (Kshs)</th>
+                                <th scope="col">Capacity</th>
+                                <!-- <th scope="col">Action</th> -->
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr *ngFor="let course of courses">
+                                <td>{{course.id}}</td>
+                                <td>{{course.name}}</td>
+                                <td>{{course.tutor}}</td>
+                                <td>{{course.course_fee}}</td>
+                                <td>{{course.capacity}}</td>
+                                <!-- <td>
+                                    <button type="button" class="btn btn-indigo">Add </button>
+
+                                </td> -->
+                            </tr>
+                            
+                            </tbody>
+                        </table>
+                </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+  
+  

@@ -1,0 +1,63 @@
+<div>
+
+    <p>    Value: {{ courseForm.value | json }}</p>
+</div>
+<div class="container">
+    <div class="row">
+<div class="col"></div>
+<div class="col-8">
+        <div *ngIf="storedCourses; else addcourse">
+
+                <table class="table">
+                        <thead class="indigo white-text">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">Action</th>
+                            <!-- <th scope="col">Action</th> -->
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor="let course of storedCourses">
+                            <td>{{course.name}}</td>
+                            <td>{{course.start_date}}</td>
+                            <td>
+                                <button type="button" class="btn btn-indigo">Edit</button>
+
+                            </td>
+                        </tr>
+                        
+                        </tbody>
+                    </table>
+      
+            </div>
+
+              <ng-template #addcourse>
+                  
+                    <div class="md-form input-group"  [formGroup]="courseForm">
+                            <div formArrayName="mycourses">
+                                <div  *ngFor="let course of courseForms.controls; let i=index" [formGroupName]="i">
+                            <div class="input-group-prepend">
+                              <!-- <span class="input-group-text md-addon">First and last name</span> -->
+                          
+            
+                            <input type="text" aria-label="First name" formControlName="email" class="form-control" placeholder="Email"> &nbsp;&nbsp;
+                            <input type="text" aria-label="Last name"  formControlName="name" class="form-control" placeholder="Name"> &nbsp;&nbsp;
+                            
+                        <input type="text" aria-label="Last name" formControlName="start_date" class="form-control" placeholder="Start"> &nbsp;&nbsp;
+                        <button class="btn btn-indigo" (click)="storeCourse()" type="submit">SAVE CHANGES</button>
+                                            </div>
+                                        </div> 
+                     <button class="btn btn-indigo" (click)="addCourse()" type="submit">NEW COURSE</button>
+            
+                                    </div>
+                          </div>
+              </ng-template>
+
+
+       
+
+</div>
+<div class="col"></div>
+    </div>
+</div>
