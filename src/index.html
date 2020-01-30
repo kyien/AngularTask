@@ -12,17 +12,34 @@
 
 <link rel="stylesheet" type="text/html" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 <link rel="stylesheet"  type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<link rel="stylesheet"  type="text/html" href="node_modules/mdbootstrap/css/bootstrap.min.css">
-<link rel="stylesheet"  type="text/html" href="node_modules/mdbootstrap/css/mdb.min.css">
-<link rel="stylesheet"  type="text/html" href="node_modules/mdbootstrap/css/style.css">
+<link rel="stylesheet"  type="text/html" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet"  type="text/html" href="assets/font-awesome/css/font-awesome.css">
+<link rel="stylesheet"  type="text/html" href="assets/css/animate.css">
+<link href="assets/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+<link href="asets/css/plugins/select2/select2.min.css" rel="stylesheet" type="text/html"> 
+<link rel="stylesheet"  type="text/html" href="style.css">
 </head>
 <body>
   <app-root></app-root>
 
 
-  <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
-<script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
-<script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+  <script src="assets/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="assets/js/popper.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script type="text/javascript" src="assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="assets/js/inspinia.js"></script>
+<script type="text/javascript" src="assets/js/plugins/pace/pace.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+      $('#data_2 .input-group.date').datepicker({
+        keyboardNavigation: false,
+    calendarWeeks: true
+            });
+    } );
+    </script>
 </body>
 </html>

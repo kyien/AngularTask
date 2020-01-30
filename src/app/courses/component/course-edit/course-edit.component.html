@@ -27,8 +27,12 @@
                
                                         </td>
                                         <td>
-                <input type="text" aria-label="Last name" formControlName="start_date" class="form-control" placeholder="Start">
-                       
+                <!-- <input type="text" aria-label="Last name" id="datepicker" formControlName="start_date" class="form-control" placeholder="Start"> -->
+                <div class="form-group" id="data_2">
+                        <div class="input-group date" data-provide="datepicker">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="">
+                        </div>
+                    </div>
                                         </td>
                                         <td>
                 <button class="btn btn-indigo" (click)="remove(i)" >DELETE</button>

@@ -24,17 +24,22 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
-             "node_modules/mdbootstrap/css/bootstrap.min.css",
-             "node_modules/mdbootstrap/css/mdb.min.css",
-             "node_modules/mdbootstrap/css/style.css",
+             "src/assets/css/bootstrap.min.css",
+             "src/assets/css/animate.css",
+             "src/assets/css/plugins/datapicker/datepicker3.css",
+             "src/assets/font-awesome/css/font-awesome.css",
               "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/mdbootstrap/js/jquery.min.js",
-              "node_modules/mdbootstrap/js/popper.min.js",
-              "node_modules/mdbootstrap/js/bootstrap.min.js",
-              "node_modules/mdbootstrap/js/mdb.min.js"
+              "src/assets/js/jquery-3.1.1.min.js",
+              "src/assets/js/popper.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/plugins/datapicker/bootstrap-datepicker.js",
+              "src/assets/js/plugins/metisMenu/jquery.metisMenu.js",
+              "src/assets/js/plugins/slimscroll/jquery.slimscroll.min.js",
+              "src/assets/js/inspinia.js",
+              "src/assets/js/plugins/pace/pace.min.js"
+
             ]
           },
           "configurations": {
